@@ -1,0 +1,66 @@
+@font-face {
+  font-family: Trembesi;
+  src: url(../fonts/Trembesi.woff);
+}
+@font-face {
+  font-family: Open Sans;
+  src: url(../fonts/opensans.woff2);
+}
+@font-face {
+  font-family: Open Sans Condensed;
+  src: url(../fonts/opensanscondensed.woff2);
+}
+@font-face {
+  font-family: Goldman;
+  src: url(../fonts/goldman.woff2);
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Open Sans";
+}
+
+body {
+  overflow-x: hidden;
+  margin: 0;
+  position: relative;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+
+main {
+  position: relative;
+  z-index: 1;
+}
+
+.show_in_mobile {
+  display: block;
+}
+
+.show_in_desktop {
+  display: none;
+}
+
+@media screen and (min-width: 993px) {
+  .show_in_mobile {
+    display: none;
+  }
+
+  .show_in_desktop {
+    display: block;
+  }
+}
+
+.page-content {
+}
+
+.no-point-event {
+  pointer-events: none;
+}
